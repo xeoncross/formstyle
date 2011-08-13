@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>FormStyle - CSS Styling for Forms</title>
+
+	<link rel="stylesheet" href="grid.css" />
+	<link rel="stylesheet" href="form.css" />
+	<link rel="stylesheet" href="style.css" />
+
+	<!--[if IE]><![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="container">
+
+	<form method="post">
+
+		<h1>Linear Form</h1>
+
+		<fieldset>
+			<p>
+				<label>Text</label>
+				<input type="text" name="text" />
+			</p>
+			<p>
+				<label>Url</label>
+				<input type="url" name="url" />
+			</p>
+			<p>
+				<label>Password</label>
+				<input type="password" name="password" />
+			</p>
+			<p>
+				<label>Email</label>
+				<input type="email" name="email" />
+			</p>
+			<p>
+				<label>Tel</label>
+				<input type="tel" name="tel" />
+			</p>
+			<p>
+				<label>Checkbox</label>
+				<input type="checkbox" name="checkbox" />
+			</p>
+			<p>
+				<label>Radio</label>
+				<input type="radio" name="radio" />
+			</p>
+			<p>
+				<label>Range</label>
+				<input type="range" name="range" />
+			</p>
+			<p>
+				<label>Search</label>
+				<input type="search" name="search" />
+			</p>
+			<p>
+				<label>Selectbox</label>
+				<textarea cols="30" rows="5" >Textarea text</textarea>
+			</p>
+			<p>
+				<label>Textarea</label>
+				<select id="select_dd" name="select_dd">
+				<optgroup label="Group 1">
+				  <option>Some text goes here</option>
+				  <option>Another choice could be here</option>
+
+				  <option>Yet another item to be chosen</option>
+				</optgroup>
+				<optgroup label="Group 2">
+				  <option>Some text goes here</option>
+				  <option>Another choice could be here</option>
+				  <option>Yet another item to be chosen</option>
+				</optgroup>
+
+				<optgroup label="Group 3">
+				  <option>Some text goes here</option>
+				  <option>Another choice could be here</option>
+				  <option>Yet another item to be chosen</option>
+				</optgroup>
+			  </select>
+			</p>
+			<p>
+				<input type="reset" name="reset" />
+				<input type="button" value="Button" name="button" />
+				<input type="submit" name="submit" />
+			</p>
+		</fieldset>
+
+
+	<h1>Grid Form</h1>
+	<p>One of the problems with CSS grids is that they chop off elements that
+	extend past the given column. This is a problem with elements that are 100%
+	in width (like text inputs) that have any padding applied. This system
+	attempts to solve that.</p>
+
+	<fieldset>
+
+		<div class="first grid_4">
+			<p>
+				<label>Text <span class="help">support text</span></label>
+				<input type="text" name="text" />
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Text <span class="help">support text</span></label>
+				<input type="text" name="text" />
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Text <span class="help">support text</span></label>
+				<input type="text" name="text" />
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>URL <span class="help">support text</span></label>
+				<input type="url" placeholder="http://" name="url" />
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>URL <span class="help">support text</span></label>
+				<input type="url" placeholder="http://" name="url" />
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>URL <span class="help">support text</span></label>
+				<input type="url" placeholder="http://" name="url" />
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>Password <span class="help">support text</span></label>
+				<input type="password" name="password" />
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Password <span class="help">support text</span></label>
+				<input type="password" name="password" />
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Password <span class="help">support text</span></label>
+				<input type="password" name="password" />
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>Email <span class="help">support text</span></label>
+				<input type="email" name="email" />
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Email <span class="help">support text</span></label>
+				<input type="email" name="email" />
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Email <span class="help">support text</span></label>
+				<input type="email" name="email" />
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>Tel <span class="help">support text</span></label>
+				<input type="tel" name="tel" />
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Tel <span class="help">support text</span></label>
+				<input type="tel" name="tel" />
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Tel <span class="help">support text</span></label>
+				<input type="tel" name="tel" />
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>Checkbox: <span class="help">support text</span></label>
+				<input type="checkbox" name="checkbox" /> Left
+				<input type="checkbox" name="checkbox" /> Right
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Checkbox: <span class="help">support text</span></label>
+				<input type="checkbox" name="checkbox" /> Left
+				<input type="checkbox" name="checkbox" /> Right
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Checkbox: <span class="help">support text</span></label>
+				<input type="checkbox" name="checkbox" /> Left
+				<input type="checkbox" name="checkbox" /> Right
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>Radio: <span class="help">support text</span></label>
+				<input type="radio" name="radio" /> yes
+				<input type="radio" name="radio" /> no
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Radio: <span class="help">support text</span></label>
+				<input type="radio" name="radio" /> yes
+				<input type="radio" name="radio" /> no
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Radio: <span class="help">support text</span></label>
+				<input type="radio" name="radio" /> yes
+				<input type="radio" name="radio" /> no
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>Range <span class="help">support text</span></label>
+				<input type="range" name="range" />
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Range <span class="help">support text</span></label>
+				<input type="range" name="range" />
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Range <span class="help">support text</span></label>
+				<input type="range" name="range" />
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>Search <span class="help">support text</span></label>
+				<input type="search" placeholder="Search" name="search" />
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Search <span class="help">support text</span></label>
+				<input type="search" name="search" />
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Search <span class="help">support text</span></label>
+				<input type="search" name="search" />
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>Selectbox</label>
+				<textarea cols="30" rows="5" >Textarea text</textarea>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Selectbox</label>
+				<textarea cols="30" rows="5" >Textarea text</textarea>
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Selectbox</label>
+				<textarea cols="30" rows="5" >Textarea text</textarea>
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<div class="first grid_4">
+			<p>
+				<label>Textarea</label>
+				<select id="select_dd" name="select_dd">
+					<optgroup label="Group 1">
+					  <option>Some text goes here</option>
+					  <option>Another choice could be here</option>
+
+					  <option>Yet another item to be chosen</option>
+					</optgroup>
+					<optgroup label="Group 2">
+					  <option>Some text goes here</option>
+					  <option>Another choice could be here</option>
+					  <option>Yet another item to be chosen</option>
+					</optgroup>
+
+					<optgroup label="Group 3">
+					  <option>Some text goes here</option>
+					  <option>Another choice could be here</option>
+					  <option>Yet another item to be chosen</option>
+					</optgroup>
+				</select>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_success">
+				<label>Textarea</label>
+				<select id="select_dd" name="select_dd">
+					<optgroup label="Group 1">
+					  <option>Some text goes here</option>
+					  <option>Another choice could be here</option>
+
+					  <option>Yet another item to be chosen</option>
+					</optgroup>
+					<optgroup label="Group 2">
+					  <option>Some text goes here</option>
+					  <option>Another choice could be here</option>
+					  <option>Yet another item to be chosen</option>
+					</optgroup>
+
+					<optgroup label="Group 3">
+					  <option>Some text goes here</option>
+					  <option>Another choice could be here</option>
+					  <option>Yet another item to be chosen</option>
+					</optgroup>
+				</select>
+				<em>Looking good!</em>
+			</p>
+		</div>
+
+		<div class="grid_4">
+			<p class="form_error">
+				<label>Textarea</label>
+				<select id="select_dd" name="select_dd">
+					<optgroup label="Group 1">
+					  <option>Some text goes here</option>
+
+					  <option>Another choice could be here</option>
+					  <option>Yet another item to be chosen</option>
+					</optgroup>
+					<optgroup label="Group 2">
+					  <option>Some text goes here</option>
+					  <option>Another choice could be here</option>
+					  <option>Yet another item to be chosen</option>
+
+					</optgroup>
+					<optgroup label="Group 3">
+					  <option>Some text goes here</option>
+					  <option>Another choice could be here</option>
+					  <option>Yet another item to be chosen</option>
+					</optgroup>
+				</select>
+				<em>There was a problem</em>
+			</p>
+		</div>
+
+		<p>
+			<input type="reset" name="reset" />
+			<input type="button" value="Button" name="button" />
+			<input type="submit" name="submit" />
+		</p>
+	</fieldset>
+
+</form>
+</div>
+
+</body>
+</html>

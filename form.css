@@ -1,0 +1,163 @@
+/*
+ * Structural Form Styles
+ */
+
+fieldset { margin: 0; padding: 0; border: none; }
+
+input + em { display: block;} /* Fix for checkbox, button, and radio messages */
+
+label span { float: right; color: #999; }
+
+input, textarea, button
+{
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	vertical-align: middle;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=url],
+textarea {
+	width: 100%;
+	padding: 5px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	/* IE 6/7 */
+	*padding: 0 0 .5em 0;
+	*text-indent: 5px;
+	*width: 98%;
+}
+
+
+/*
+ * Theme Styling
+ */
+
+.form_error input[type=text],
+.form_error input[type=email],
+.form_error input[type=password],
+.form_error input[type=tel],
+.form_error input[type=url],
+.form_error textarea
+{
+	-webkit-box-shadow: inset 0px 0px 5px 0px #d96c72;
+	-moz-box-shadow: inset 0px 0px 5px 0px #d96c72;
+	box-shadow: inset 0px 0px 5px 0px #d96c72;
+	border-color: #AF1436;
+}
+
+.form_success input[type=text],
+.form_success input[type=email],
+.form_success input[type=password],
+.form_success input[type=tel],
+.form_success input[type=url],
+.form_success textarea
+{
+	-webkit-box-shadow: inset 0px 0px 5px 0px #74db74;
+	-moz-box-shadow: inset 0px 0px 5px 0px #74db74;
+	box-shadow: inset 0px 0px 5px 0px #74db74;
+	border-color: #4ab04a;
+}
+
+input[type=text],
+input[type=text]:focus,
+input[type=email],
+input[type=email]:focus,
+input[type=password],
+input[type=password]:focus,
+input[type=tel],
+input[type=tel]:focus,
+input[type=url],
+input[type=url]:focus,
+textarea,
+textarea:active
+{
+	background: #fff;
+	border: 1px solid #ddd;
+	border-top: 1px solid #999;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #eee;
+	-webkit-box-shadow: inset 0px 0px 4px 2px #eee;
+	-moz-box-shadow: inset 0px 0px 4px 2px #eee;
+	box-shadow: inset 0px 0px 4px 2px #eee;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+textarea:focus
+{
+	-webkit-box-shadow: inset 0px 0px 5px 0px #78a5e3;
+	-moz-box-shadow: inset 0px 0px 5px 0px #78a5e3;
+	box-shadow: inset 0px 0px 5px 0px #78a5e3;
+	border-color: #4b6375;
+}
+
+.form_error em { color: #d81b21; }
+.form_success em { color: #4ab04a; }
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"]
+{
+	-webkit-appearance: none;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+	background: #ddd url(../images/button.png) repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+	background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+	border: 1px solid;
+	border-color: #ddd #bbb #999;
+	cursor: pointer;
+	color: #333;
+	/*
+	Helvetica Neue present, because it works better
+	for line-height on buttons than Arial, on OS X.
+	*/
+	font: bold 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	outline: 0;
+	overflow: visible;
+	padding: 3px 10px;
+	text-shadow: #fff 0 1px 1px;
+	width: auto;
+
+	/* IE7 */
+	*padding-top: 2px;
+	*padding-bottom: 0px;
+}
+
+/* IE7 */
+button
+{
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+button:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover
+{
+	background: #e0e0e0; /* Old browsers */
+	background: -moz-linear-gradient(top, #e0e0e0 0%, #f7f7f7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e0e0e0 0%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e0e0e0 0%,#f7f7f7 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #e0e0e0 0%,#f7f7f7 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #e0e0e0 0%,#f7f7f7 100%); /* W3C */
+	text-shadow: #fff 0px -1px 1px;
+	border-color: #999 #ccc #aaa;
+}
